@@ -8,12 +8,12 @@ Accessing SWAPI can be completed through simple HTTP requests. On terminal, user
 
 In order to make specific data requests, users must follow object notation formatting, attaching one of the six resources as a string and the corresponding id tag of the specific data:
 
-```http https://swapi.co/api/people/```
-```http https://swapi.co/api/films/```
-```http https://swapi.co/api/species/```
-```http https://swapi.co/api/starships/```
-```http https://swapi.co/api/vehicles/```
-```http https://swapi.co/api/planets/```
+- ```http https://swapi.co/api/people/```
+- ```http https://swapi.co/api/films/```
+- ```http https://swapi.co/api/species/```
+- ```http https://swapi.co/api/starships/```
+- ```http https://swapi.co/api/vehicles/```
+- ```http https://swapi.co/api/planets/```
 
 ## Finding films with Luke Skywalker
 
