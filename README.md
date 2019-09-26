@@ -6,7 +6,13 @@ The Star Wars API (SWAPI) is a programatically-formatted and accessible data set
 
 Accessing SWAPI can be completed through simple HTTP requests. On terminal, users can utilize the 'curl' function or install 'httpie' to test the requests. A simple request on terminal will be made to SWAPI's Base URL: https://swapi.co/api/, prefixed by either curl or http. 
 
-In order to make specific data requests, users must follow JSON schema and 
+In order to make specific data requests, users must follow object notation formatting, attaching one of the six attributes as a string and the corresponding id tag of the specific data. 
 
 
 ## Finding films with Luke Skywalker
+
+To find films featuring Luke Skywalker, users can first make a request to SWAPI's <strong>People</strong> attribute with:
+
+```http https://swapi.co/api/people/```
+
+Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films.
