@@ -10,7 +10,7 @@ In order to make specific data requests, users must follow object notation forma
 
 For example, a user fetching data from the <strong>species</strong> resource will make the following request:```http https://swapi.co/api/species/```, whereas a user fetching data from <strong>planets</strong> will input:```http https://swapi.co/api/planets/```.
 
-Generally, requests for data follows the format of: command URL/api/<resource>/
+Generally, requests for data follows the format of: command URL/api/<strong>resource</strong>/
 
 ## Finding films with Luke Skywalker
 
