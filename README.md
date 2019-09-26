@@ -26,4 +26,4 @@ Each object will contain sub-attributes such as <em>name, birth_year, eye_color,
 
 ```http https://swapi.co/api/people/?search=luke```
 
-Inputting the above command will results in the specific data set for Luke Skywalker, including the sub-attribute <em>films</em>, which includes all the movies Luke Skywalker appeared in !
+Inputting the above command will results in the specific data set for Luke Skywalker, including the sub-attribute <em>films</em>, which includes all the movies Luke Skywalker appeared in!
