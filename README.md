@@ -22,3 +22,6 @@ To find films featuring Luke Skywalker, users can first make a request to SWAPI'
 ```http https://swapi.co/api/people/```
 
 Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films.
+Each object will contain sub-attributes such as <em>name, birth_year, eye_color, and hair_color</em>. At its current state, SWAPI only allows search fields for one or two sub-attributes of each resource. For the <strong>People</strong> resource, the <em>name</em> sub-attribute can be searched through and used to isolate specific data sets using the following command:
+
+```http https://swapi.co/api/people/?search=luke```
