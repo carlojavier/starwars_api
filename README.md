@@ -4,16 +4,13 @@ The Star Wars API (SWAPI) is a programatically-formatted and accessible data set
 
 ## How to use SWAPI
 
-Accessing SWAPI can be completed through simple HTTP requests. On terminal, users can utilize the 'curl' function or install 'httpie' to test the requests. A simple request on terminal will be made to SWAPI's Base URL: https://swapi.co/api/, prefixed by either curl or http. 
+Accessing SWAPI can be completed through simple HTTP requests. On terminal, users can utilize the [curl](https://curl.haxx.se) command or install [httpie](https://httpie.org/) to test the requests. A simple request on terminal will be made to SWAPI's Base URL: https://swapi.co/api/, prefixed by either curl or http. For clarity, this documentation will make use of httpie. 
 
 In order to make specific data requests, users must follow object notation formatting, attaching one of the six resources as a string and the corresponding id tag of the specific data:
 
-- ```http https://swapi.co/api/people/```
-- ```http https://swapi.co/api/films/```
-- ```http https://swapi.co/api/species/```
-- ```http https://swapi.co/api/starships/```
-- ```http https://swapi.co/api/vehicles/```
-- ```http https://swapi.co/api/planets/```
+For example, a user fetching data from the <strong>species</strong> resource will make the following request:```http https://swapi.co/api/species/```, whereas a user fetching data from <strong>planets</strong> will input:```http https://swapi.co/api/planets/```.
+
+Generally, requests for data follows the format of: command URL/api/<resource>/
 
 ## Finding films with Luke Skywalker
 
