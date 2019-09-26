@@ -25,3 +25,5 @@ Making this request will yield a set of JSON objects with a number of <strong>Pe
 Each object will contain sub-attributes such as <em>name, birth_year, eye_color, and hair_color</em>. At its current state, SWAPI only allows search fields for one or two sub-attributes of each resource. For the <strong>People</strong> resource, the <em>name</em> sub-attribute can be searched through and used to isolate specific data sets using the following command:
 
 ```http https://swapi.co/api/people/?search=luke```
+
+Inputting the above command will results in the specific data set for Luke Skywalker, including the sub-attribute <em>films</em>, which includes all the movies Luke Skywalker appeared in !
