@@ -18,9 +18,46 @@ To find films featuring Luke Skywalker, users can first make a request to SWAPI'
 
 ```http https://swapi.co/api/people/```
 
-Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films.
-Each object will contain sub-attributes such as <em>name, birth_year, eye_color, and hair_color</em>. At its current state, SWAPI only allows search fields for one or two sub-attributes of each resource. For the <strong>People</strong> resource, the <em>name</em> sub-attribute can be searched through and used to isolate specific data sets using the following command:
+Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films. SWAPI's <strong>People</strong> resource can be filtered via its <strong><em>name<em><strong> property, and using the following command:```http https://swapi.co/api/people/?search=luke```, will result in this:
 
-```http https://swapi.co/api/people/?search=luke```
+```{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "birth_year": "19BBY",
+            "created": "2014-12-09T13:50:51.644000Z",
+            "edited": "2014-12-20T21:17:56.891000Z",
+            "eye_color": "blue",
+            "films": [
+                "https://swapi.co/api/films/2/",
+                "https://swapi.co/api/films/6/",
+                "https://swapi.co/api/films/3/",
+                "https://swapi.co/api/films/1/",
+                "https://swapi.co/api/films/7/"
+            ],
+            "gender": "male",
+            "hair_color": "blond",
+            "height": "172",
+            "homeworld": "https://swapi.co/api/planets/1/",
+            "mass": "77",
+            "name": "Luke Skywalker",
+            "skin_color": "fair",
+            "species": [
+                "https://swapi.co/api/species/1/"
+            ],
+            "starships": [
+                "https://swapi.co/api/starships/12/",
+                "https://swapi.co/api/starships/22/"
+            ],
+            "url": "https://swapi.co/api/people/1/",
+            "vehicles": [
+                "https://swapi.co/api/vehicles/14/",
+                "https://swapi.co/api/vehicles/30/"
+            ]
+        }
+    ]
+}```
 
-Inputting the above command will results in the specific data set for Luke Skywalker, including the sub-attribute <em>films</em>, which includes all the movies Luke Skywalker appeared in!
+The above object includes information on Luke Skywalker, including the film property, which lists the IDs for the films that Luke Skywalker appeared in.
