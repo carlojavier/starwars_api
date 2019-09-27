@@ -18,7 +18,7 @@ To find films featuring Luke Skywalker, users can first make a request to SWAPI'
 
 ```http https://swapi.co/api/people/```
 
-Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films. SWAPI's <strong>People</strong> resource can be filtered via its <strong><em>name</em></strong> property, and using the following command: ```http https://swapi.co/api/people/?search=luke```, will result in this:
+Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films. SWAPI's <strong>People</strong> resource can be filtered via its <strong><em>name</em></strong> property, and using the following command: ```http https://swapi.co/api/people/?search=luke```, will result in the following JSON file:
 
 ```{
     "count": 1,
@@ -62,7 +62,7 @@ Making this request will yield a set of JSON objects with a number of <strong>Pe
 ```
 
 
-The above object includes information on Luke Skywalker, including the <strong><em>film</em></strong> property, which lists the IDs for the films that Luke Skywalker appeared in. This command provides a user with the list of films that Master Skywalker appeared in, but in order to see further details about each respective movie, a user must simply input the following:
+The above object includes information on Luke Skywalker, including the <strong><em>film</em></strong> property, which lists the IDs for the films that Luke Skywalker appeared in. A user can now see the list of films Master Skywalker appeared in, but in order to see further details about each respective movie, a user must simply input the following:
 
 ```http https://swapi.co/api/films/1/``` 
 
