@@ -6,11 +6,11 @@ The Star Wars API (SWAPI) is a programatically-formatted and accessible data set
 
 Accessing SWAPI can be completed through simple HTTP requests. On terminal, users can utilize the [curl](https://curl.haxx.se) command or install [httpie](https://httpie.org/) to test the requests. A simple request on terminal will be made to SWAPI's Base URL: https://swapi.co/api/, prefixed by either curl or http. For clarity, this documentation will make use of httpie. 
 
-In order to make specific data requests, users must follow object notation formatting, attaching one of the six resources as a string and the corresponding id tag of the specific data:
+In order to make specific data requests, users must follow object notation formatting, attaching one of the six resources as a string and the corresponding ID tag of the specific data:
 
-For example, a user fetching data from the <strong>species</strong> resource will make the following request:```http https://swapi.co/api/species/```, whereas a user fetching data from <strong>planets</strong> will input:```http https://swapi.co/api/planets/```.
+For example, a user fetching data from the <strong>species</strong> resource will make the following request:```http https://swapi.co/api/species/```, whereas a user fetching data from <strong>planets</strong> will input: ```http https://swapi.co/api/planets/```.
 
-Generally, requests for data follows the format of: command URL/api/<strong>resource</strong>/
+Generally, requests for data follows the format of: cmd URL/api/<strong>resource</strong>/
 
 ## Finding films with Luke Skywalker
 
@@ -18,7 +18,7 @@ To find films featuring Luke Skywalker, users can first make a request to SWAPI'
 
 ```http https://swapi.co/api/people/```
 
-Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films. SWAPI's <strong>People</strong> resource can be filtered via its <strong><em>name</em></strong> property, and using the following command:```http https://swapi.co/api/people/?search=luke```, will result in this:
+Making this request will yield a set of JSON objects with a number of <strong>People</strong> featured in the Star Wars films. SWAPI's <strong>People</strong> resource can be filtered via its <strong><em>name</em></strong> property, and using the following command: ```http https://swapi.co/api/people/?search=luke```, will result in this:
 
 ```{
     "count": 1,
@@ -58,6 +58,14 @@ Making this request will yield a set of JSON objects with a number of <strong>Pe
             ]
         }
     ]
-}```
+}
+```
 
-The above object includes information on Luke Skywalker, including the film property, which lists the IDs for the films that Luke Skywalker appeared in.
+
+The above object includes information on Luke Skywalker, including the <strong><em>film</em></strong> property, which lists the IDs for the films that Luke Skywalker appeared in. This command provides a user with the list of films that Master Skywalker appeared in, but in order to see further details about each respective movie, a user must simply input the following:
+
+```http https://swapi.co/api/films/1/``` 
+
+Like Rey, we can now find Master Skywalker! And we didn't even need the missing map piece from R2!
+
+<em>May the force be with you, always</em>
